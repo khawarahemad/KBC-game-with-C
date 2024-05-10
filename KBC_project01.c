@@ -12,7 +12,7 @@ int main() {
     int answers[] = {1, 1, 1, 1, 4}; // Store correct answers
     int i, answer;
 
-    printf("------------USER GUID--------------\n");
+    printf("------------USER GUIDE--------------\n");
     printf("\nThe game has 5 rounds, each with a question about a programming language and four choices. If you answer the question correctly, you get 7 points, and if you answer incorrectly, you get 0 points, and give invalid input, Deduct ---3--- points for invalid answer . The game ends when you have answered all 5 questions.\n");
     printf("____________________________________________________________\nAre you ready? Let's go!\n----------------\n");
 

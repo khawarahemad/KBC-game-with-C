@@ -13,7 +13,7 @@ int main() {
     int i, answer;
 
     printf("------------USER GUID--------------\n");
-    printf("The game has 5 rounds, each with a question about a programming language and four choices. If you answer the question correctly, you get 7 points, and if you answer incorrectly, you get 0 points, and give invalid input, Deduct ---3--- points for invalid answer . The game ends when you have answered all 5 questions.\n");
+    printf("\nThe game has 5 rounds, each with a question about a programming language and four choices. If you answer the question correctly, you get 7 points, and if you answer incorrectly, you get 0 points, and give invalid input, Deduct ---3--- points for invalid answer . The game ends when you have answered all 5 questions.\n");
     printf("____________________________________________________________\nAre you ready? Let's go!\n----------------\n");
 
     // Loop through each question
@@ -25,12 +25,12 @@ int main() {
             printf("Correct!\n");
             k[i] = 7;
         } 
-        else if(answer < 1 || answer >= 4) {
+        else if(answer >= 1 && answer <= 4) {
             printf("Sorry, you lose this round.\n");
             k[i] = 0;
         }
         else{
-            printf("Deduct ---3--- points for invalid answer\n");
+            printf("Deduct ---(-3)--- points for invalid input\n");
             k[i] = -3;
         }
         printf("------------------------------------------\n");
